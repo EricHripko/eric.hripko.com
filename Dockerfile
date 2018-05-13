@@ -1,4 +1,5 @@
 FROM jekyll/jekyll:3.8 AS build-env
+ARG JEKYLL_ENV=production
 
 # Copy everything and build
 WORKDIR /site

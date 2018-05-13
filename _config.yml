@@ -9,13 +9,21 @@ description: >-
   with C#, .NET, Azure and Docker. In this blog, I document adventures
   encountered during coding for work and my pet projects. 
 baseurl: ""
-url: ""
+url: "https://eric.hripko.com/"
 
 # Social
 linkedin_username: eric-hripko
 twitter_username: EricHripko
 github_username:  EricHripko
 rss: RSS Feed
+
+# Comment section
+disqus:
+  shortname: eric-hripko
+
+# Google Analytics
+google:
+  analytics: UA-119124355-1
 
 # Build settings
 markdown: kramdown
