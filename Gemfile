@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 3.8.1"
-gem 'jekyll-theme-artisan', '~> 0.1.5'
+gem 'jekyll-theme-artisan', '~> 0.1.6'
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 

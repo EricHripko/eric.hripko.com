@@ -61,7 +61,7 @@ GEM
       sass (~> 3.4)
     jekyll-seo-tag (2.4.0)
       jekyll (~> 3.3)
-    jekyll-theme-artisan (0.1.5)
+    jekyll-theme-artisan (0.1.6)
       autoprefixer-rails (~> 8.4)
       bootstrap (~> 4.1.1)
       jekyll (~> 3.8)
@@ -112,7 +112,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 3.8.1)
-  jekyll-theme-artisan (~> 0.1.5)
+  jekyll-theme-artisan (~> 0.1.6)
   tzinfo-data
 
 BUNDLED WITH
