@@ -29,14 +29,14 @@ E/AndroidRuntime( 3230):  at java.lang.reflect.Method.invoke(Method.java:372)
 E/AndroidRuntime( 3230):  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:905)
 E/AndroidRuntime( 3230):  ... 1 more
 E/AndroidRuntime( 3230): Caused by: md52ce486a14f4bcd95899665e9d932190b.JavaProxyThrowable:
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---&gt;
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. --->
 System.Runtime.Serialization.SerializationException: serializationStream supports seeking, but its length is 0
 ...
-E/AndroidRuntime( 3230):   at Core.Settings.DeSerializeTicketsLastDisplayed (Android.Content.Context context) [0x00000] in &lt;filename unknown&gt;:0 
-E/AndroidRuntime( 3230):   at Core.CoreApplication..ctor (IntPtr javaReference, JniHandleOwnership transfer) [0x00000] in &lt;filename unknown&gt;:0 
+E/AndroidRuntime( 3230):   at Core.Settings.DeSerializeTicketsLastDisplayed (Android.Content.Context context) [0x00000] in <filename unknown>:0 
+E/AndroidRuntime( 3230):   at Core.CoreApplication..ctor (IntPtr javaReference, JniHandleOwnership transfer) [0x00000] in <filename unknown>:0 
 E/AndroidRuntime( 3230):   --- End of inner exception stack trace ---
-E/AndroidRuntime( 3230): at System.Reflection.MonoCMethod.InternalInvoke (object,object[]) &lt;0x00080&gt;
-E/AndroidRuntime( 3230): at System.Reflection.MonoCMethod.DoInvoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo) &lt;0x00103&gt;
+E/AndroidRuntime( 3230): at System.Reflection.MonoCMethod.InternalInvoke (object,object[]) <0x00080>
+E/AndroidRuntime( 3230): at System.Reflection.MonoCMethod.DoInvoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo) <0x00103>
 E/AndroidRuntime( 3230): at System.Reflection.MonoCMethod.Invoke
 ...
 E/AndroidRuntime( 3230):  at md5884a0112b7c8ee51cad4c71d498a5924.CoreApplication.n_onCreate(Native Method)
