@@ -1,0 +1,25 @@
+# General
+title: Eric Hripko
+subtitle: Software Engineer
+email: your-email@example.com
+description: >-
+  I have always thought of coding as art and a form of self-expression. Having
+  picked this hobby up in school, I have now turned it into my profession. My
+  specialty is modern web and systems programming. Currently, I work primarily
+  with C#, .NET, Azure and Docker. In this blog, I document adventures
+  encountered during coding for work and my pet projects. 
+baseurl: ""
+url: ""
+
+# Social
+linkedin_username: eric-hripko
+twitter_username: EricHripko
+github_username:  EricHripko
+rss: RSS Feed
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-artisan
+artisan:
+  accent: "#7E57C2"
+  avatar: /assets/avatar.jpeg

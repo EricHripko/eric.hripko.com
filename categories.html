@@ -1,0 +1,17 @@
+---
+layout: page
+title: Categories
+---
+
+{% for category in site.categories %}
+  <div class="py-2">
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <div id="#{{ category_name | slugize }}"></div>
+    
+    <a name="{{ category_name | slugize }}"></a>
+    <h5>{{ category_name }}</h5>
+    {% for post in site.categories[category_name] %}
+    <h6><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h6>
+    {% endfor %}
+  </div>
+{% endfor %}
