@@ -1,10 +1,12 @@
 FROM jekyll/jekyll:3.8 AS build-env
 
 # Copy everything and build
-COPY . .
-RUN jekyll build
-WORKDIR _site
+WORKDIR /site
+RUN chmod 777 .
+COPY . ./
+RUN jekyll build --destination out
 
 # Build runtime image
 FROM nginx
-COPY --from=build-env . /usr/share/nginx/html
+WORKDIR /usr/share/nginx/html
+COPY --from=build-env /site/out .
