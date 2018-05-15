@@ -31,3 +31,5 @@ theme: jekyll-theme-artisan
 artisan:
   accent: "#7E57C2"
   avatar: /assets/avatar.jpeg
+plugins:
+  - jekyll-sitemap
