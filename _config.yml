@@ -9,7 +9,7 @@ description: >-
   with C#, .NET, Azure and Docker. In this blog, I document adventures
   encountered during coding for work and my pet projects. 
 baseurl: ""
-url: "https://eric.hripko.com/"
+url: "https://eric.hripko.com"
 
 # Social
 linkedin_username: eric-hripko
