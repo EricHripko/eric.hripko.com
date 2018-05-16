@@ -3,6 +3,7 @@ layout:   post
 title:    "'On-premise' Azure Storage"
 date:     2016-11-20 12:21:31 +0100
 category: Azure
+tags:     azure storage blob emulator
 ---
 Recently I needed to extend one of our products with an abstract implementation
 of file system access. Specifically, we needed to be able to access files and

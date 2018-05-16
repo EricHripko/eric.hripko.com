@@ -3,6 +3,7 @@ layout:   post
 title:    "Breaking an Android app to fix it"
 date:     2016-11-20 12:12:03 +0100
 category: Android
+tags:     android debugging backup apk
 ---
 I planned to go to a gym today - I packed, prepared and hurried to my bus stop.
 However, when I tried to open First mTicket app, I was greeted with the 

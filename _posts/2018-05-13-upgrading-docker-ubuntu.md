@@ -3,6 +3,7 @@ layout:   post
 title:    "Upgrading Docker on Ubuntu"
 date:     2017-05-13 20:20:00 +0100
 category: Docker
+tags:     docker ubuntu systemd
 ---
 For one of my projects (this blog actually!), I needed to upgrade the Docker
 engine running on my server. To be exact, my provider
