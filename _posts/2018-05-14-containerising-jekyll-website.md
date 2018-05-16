@@ -73,7 +73,7 @@ Fortunately, a new feature in Docker 17.05 called
 comes to rescue. It enables us to utilise multiple containers throughout the
 build process and this way produce lightweight images while taking advantage of
 all the Docker features. Note that you might need to upgrade your Docker to
-access this feature or your encounter `Error parsing reference` issue (looks
+access this feature or you'll encounter `Error parsing reference` issue (looks
 something like the one below). Also, if you are indeed on an older version, you
 can read about my adventures while
 [upgrading Docker on Ubuntu]({{ site.baseurl }}{% link _posts/2018-05-13-upgrading-docker-ubuntu.md %}).
@@ -178,8 +178,8 @@ Bundle complete! 4 Gemfile dependencies, 47 gems now installed.
 Bundled gems are installed into `/usr/local/bundle`
 ...
 {% endhighlight %}
-Ideally, we would want this step to be cached, as dependencies of the theme
-will rarely change. `jekyll/jekyll` suggests to use 
+Ideally, we would want this step to be cached, as Ruby dependencies of the
+website will rarely change. `jekyll/jekyll` suggests to use 
 [caching with a volume](https://github.com/envygeeks/jekyll-docker/blob/master/README.md#caching),
 which (in my opinion) is a really bad idea. Implementing this method goes
 against the 'predictable environment' idea and is, frankly speaking, an
@@ -251,7 +251,8 @@ to build an image to just __20 seconds__.
 Given how much trouble `jekyll/jekyll` image caused us and the fact that we
 already pull Jekyll itself using `bundler install`, we can replace our base
 build image with something lower level. Since the original build image uses
-Ruby 2.5, we can derive from `ruby:2.5` Docker image.
+Ruby 2.5, we can derive from `ruby:2.5` Docker image. Changing the base image
+also enabled us to remove permission fix we introduced earlier.
 {% highlight docker %}
 # Setup build environment
 FROM ruby:2.5 AS build-env
@@ -311,4 +312,6 @@ COPY --from=build-env /usr/src/app/out .
 {% endhighlight %}
 In the final result, I also added `ENV JEKYLL_ENV=production` that indicates to
 Jekyll that a website must be built in __production__ mode. Voilà! This way you
-can containerise your Jekyll website with ~10 simple lines of code.
+can containerise your Jekyll website with ~10 simple lines of code. These
+general principles can be applied to other software as well, so happy
+Docker'ing and see you again!
