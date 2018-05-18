@@ -15,6 +15,7 @@ url: "https://eric.hripko.com"
 linkedin_username: eric-hripko
 twitter_username: EricHripko
 github_username:  EricHripko
+500px_username: eric-hripko
 rss: RSS Feed
 
 # Comment section
@@ -31,5 +32,8 @@ theme: jekyll-theme-artisan
 artisan:
   accent: "#7E57C2"
   avatar: /assets/avatar.jpeg
+  work: Redev Ltd
+  university: University of Leeds
+  location: Leeds, UK
 plugins:
   - jekyll-sitemap
