@@ -4,7 +4,8 @@ build_image:
   - docker:dind
   script:
     - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.gitlab.com
-    - docker build -t registry.gitlab.com/hripko/eric.hripko.com .
+    - docker pull registry.gitlab.com/hripko/eric.hripko.com
+    - docker build --tag registry.gitlab.com/hripko/eric.hripko.com --cache-from registry.gitlab.com/hripko/eric.hripko.com:latest .
     - docker push registry.gitlab.com/hripko/eric.hripko.com
   only:
     - master
