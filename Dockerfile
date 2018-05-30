@@ -6,6 +6,9 @@ RUN apt-get update && \
     apt-get install -y nodejs && \
     rm -rf /var/lib/apt/lists/*
 
+# Install Bundler
+RUN gem install bundler
+
 # Copy everything and build
 WORKDIR /usr/src/app
 COPY Gemfile* ./
