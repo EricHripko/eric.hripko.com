@@ -6,8 +6,8 @@ RUN apt-get update && \
     apt-get install -y nodejs && \
     rm -rf /var/lib/apt/lists/*
 
-# Install Bundler
-RUN gem install bundler
+# TODO: remove after https://github.com/docker-library/ruby/pull/209 was fixed.
+ENV PATH "/usr/local/bundle/bin:${PATH}"
 
 # Copy everything and build
 WORKDIR /usr/src/app
