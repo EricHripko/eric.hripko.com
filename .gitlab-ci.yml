@@ -4,6 +4,7 @@ build_image:
   - docker:dind
   script:
     - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.gitlab.com
+    - docker pull registry.gitlab.com/hripko/eric.hripko.com/build-env
     - docker pull registry.gitlab.com/hripko/eric.hripko.com
     - docker build --tag registry.gitlab.com/hripko/eric.hripko.com/build-env --target build-env --cache-from registry.gitlab.com/hripko/eric.hripko.com/build-env .
     - docker build --tag registry.gitlab.com/hripko/eric.hripko.com --cache-from registry.gitlab.com/hripko/eric.hripko.com --cache-from registry.gitlab.com/hripko/eric.hripko.com/build-env .
