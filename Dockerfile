@@ -7,7 +7,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # TODO: remove after https://github.com/docker-library/ruby/pull/209 was fixed.
-RUN gem install bundler --debug --backtrace --verbose
+RUN sudo gem install bundler --debug --backtrace --verbose
 ENV PATH "/usr/local/bundle/bin:${PATH}"
 
 # Copy everything and build
