@@ -1,4 +1,4 @@
-FROM ruby:2.5 AS build-env
+FROM ruby:2.5 AS builder
 ENV JEKYLL_ENV=production
 
 # Install JS environment
@@ -16,4 +16,7 @@ RUN bundle exec jekyll build --destination out
 # Build runtime image
 FROM nginx
 WORKDIR /usr/share/nginx/html
-COPY --from=build-env /usr/src/app/out .
+COPY --from=builder /usr/src/app/out .
+COPY deployment/site.template /etc/nginx/conf.d/
+CMD envsubst < /etc/nginx/conf.d/site.template > /etc/nginx/conf.d/default.conf && \
+    exec nginx -g 'daemon off;'
