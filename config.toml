@@ -2,7 +2,11 @@ baseURL = "https://eric.hripko.com/"
 languageCode = "en-gb"
 title = "Eric Hripko"
 theme= "artisan"
+canonifyURLs = true
 enableRobotsTXT = true
+
+[permalinks]
+    posts = "/:year/:month/:day/:title/"
 
 [menu]
 
