@@ -1,0 +1,28 @@
+baseURL = "https://eric.hripko.com/"
+languageCode = "en-gb"
+title = "Eric Hripko"
+theme= "artisan"
+enableRobotsTXT = true
+
+[params]
+# General
+avatar = "/assets/avatar.jpeg"
+subtitle = "Software Engineer"
+description = """
+I have always thought of coding as art and a form of self-expression. Having
+picked this hobby up in school, I have now turned it into my profession. My
+specialty is modern web and container infrastructure. Currently, I work
+primarily with Python, Go and Docker. In this blog, I document adventures
+encountered during coding for open source and pet projects.
+"""
+
+# Social
+disqus = "eric-hripko"
+github = "EricHripko"
+linkedin = "eric-hripko"
+S00px = "eric-hripko"
+
+# Employment
+work = "Bloomberg L.P."
+university = "University of Leeds"
+location= "London, UK"

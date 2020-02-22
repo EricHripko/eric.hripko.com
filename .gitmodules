@@ -1,0 +1,3 @@
+[submodule "themes/artisan"]
+	path = themes/artisan
+	url = https://github.com/EricHripko/artisan.git
