@@ -36,6 +36,7 @@ specialty is modern web and container infrastructure. Currently, I work
 primarily with Python, Go and Docker. In this blog, I document adventures
 encountered during coding for open source and pet projects.
 """
+analytics = "UA-119124355-1"
 
 # Social
 disqus = "eric-hripko"
