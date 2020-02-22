@@ -4,6 +4,23 @@ title = "Eric Hripko"
 theme= "artisan"
 enableRobotsTXT = true
 
+[menu]
+
+[[menu.main]]
+identifier = "history"
+name = "History"
+url = "/posts/"
+
+[[menu.main]]
+identifier = "categories"
+name = "Categories"
+url = "/categories/"
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+
 [params]
 # General
 avatar = "/assets/avatar.jpeg"
