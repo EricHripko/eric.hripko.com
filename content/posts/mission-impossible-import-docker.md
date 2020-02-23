@@ -232,3 +232,6 @@ I generated for Docker **19.03.06** SDK.
 Tada! 🎉 This way you can, hopefully, include past and future Docker SDKs
 with minimal effort. So get cracking on that Docker-based software you wanted to
 make and see you again!
+
+P.S.: All of this work was to describe the following dependency tree:
+[![Dependency tree](/assets/mission-impossible-import-docker/deps.png)](/assets/mission-impossible-import-docker/deps.png)
