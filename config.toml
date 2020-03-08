@@ -25,10 +25,6 @@ identifier = "tags"
 name = "Tags"
 url = "/tags/"
 
-[markup]
-  [markup.highlight]
-    codeFences = true
-
 [params]
 # General
 avatar = "/assets/avatar.jpeg"
